@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Algorithm-Visualiser/static/css/main.9cdf12fa.chunk.css",
+    "main.js": "/Algorithm-Visualiser/static/js/main.6c877610.chunk.js",
+    "main.js.map": "/Algorithm-Visualiser/static/js/main.6c877610.chunk.js.map",
+    "runtime-main.js": "/Algorithm-Visualiser/static/js/runtime-main.66359946.js",
+    "runtime-main.js.map": "/Algorithm-Visualiser/static/js/runtime-main.66359946.js.map",
+    "static/js/2.55b47fea.chunk.js": "/Algorithm-Visualiser/static/js/2.55b47fea.chunk.js",
+    "static/js/2.55b47fea.chunk.js.map": "/Algorithm-Visualiser/static/js/2.55b47fea.chunk.js.map",
+    "static/js/3.4d758cdd.chunk.js": "/Algorithm-Visualiser/static/js/3.4d758cdd.chunk.js",
+    "static/js/3.4d758cdd.chunk.js.map": "/Algorithm-Visualiser/static/js/3.4d758cdd.chunk.js.map",
+    "index.html": "/Algorithm-Visualiser/index.html",
+    "static/css/main.9cdf12fa.chunk.css.map": "/Algorithm-Visualiser/static/css/main.9cdf12fa.chunk.css.map",
+    "static/js/2.55b47fea.chunk.js.LICENSE.txt": "/Algorithm-Visualiser/static/js/2.55b47fea.chunk.js.LICENSE.txt",
+    "static/media/NavBar.css": "/Algorithm-Visualiser/static/media/Pixellari.319bd0eb.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66359946.js",
+    "static/js/2.55b47fea.chunk.js",
+    "static/css/main.9cdf12fa.chunk.css",
+    "static/js/main.6c877610.chunk.js"
+  ]
+}
