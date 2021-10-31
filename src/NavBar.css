@@ -1,0 +1,112 @@
+@font-face {
+    font-family: BitFont;
+    src: url(./font/Pixellari.ttf);
+}
+.Title{
+    color: black;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: inline;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #018281;
+}
+
+
+
+.Title{
+    font-size: 2rem;
+    margin: 0.1rem;
+}
+
+.Inputs ul{
+    
+    
+    padding:0;
+    display: flex;
+}
+
+button{
+    margin: 0.2rem;
+    margin-right: 10px;
+}
+button:hover{
+    background-color: yellow;
+}
+.Inputs li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem;
+    
+    display: block;
+    font-family: BitFont;
+}
+.Inputs li:hover{
+    transition: 0.2s;
+    color: #CF5915;
+    
+}
+.Toggle{
+    position: absolute;
+    top: 0.7 rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.Toggle .Bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width:560px){
+    .Toggle{
+        margin-top: 10px;
+        display: flex;
+    }
+    .Inputs ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navBar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Inputs{
+        display: 'none';
+        width: 100%;
+    }
+    .Inputs li{
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+.Inputs.active{
+    display: flex;
+}
+button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    
+}
+
+}
+
+
+

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, {useState} from "react";
+import NavBar from "./NavBar"
+import SortingVis from "./SortingVis"
+
+
+
+
+//chamge the random intiavl values later on
 
 function App() {
+
+  const [arr, updateArr] = useState([])
+  const [sortStatus, setSortStatus] = useState()
+  const [Algorithm, setAlgorithm] = useState('Bubble Sort')
+  const [height, setHeight] = useState();
+    
+   
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <NavBar updateArr= {updateArr} 
+              arr={arr} 
+              sortStatus={sortStatus} 
+              setSortStatus={setSortStatus}
+              Algorithm={Algorithm}
+              setAlgorithm={setAlgorithm}
+              height={height}
+              setHeight={setHeight}
+              />
+
+      <SortingVis updateArr={updateArr} 
+                  arr={arr}  
+                  sortStatus={sortStatus} 
+                  setSortStatus={setSortStatus} 
+                  Algorithm={Algorithm}
+                  setAlgorithm={setAlgorithm}
+                  height={height}
+                  setHeight={setHeight}
+                  />    
+      
     </div>
   );
+
 }
+
+
+
 
 export default App;
