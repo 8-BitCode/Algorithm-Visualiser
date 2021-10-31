@@ -11,7 +11,7 @@ export default function BortingVis(props) {
 
     var fullColour = 0
     if (sortStatus === false){
-        fullColour = 'white'
+        fullColour = 'red'
        
     }
     else {
