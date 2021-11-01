@@ -2,10 +2,10 @@ import React, {useState,  useEffect, useRef} from 'react'
 // import navbar idk 
 
 import "./NavBar.css"
-import { BubbleSort } from './Algorithm/bubbleSort'
+import { insertionSort } from './Algorithm/insertionSort'
 import { BogoSort } from './Algorithm/bogoSort'
-
-
+import { selectionSort } from './Algorithm/selectionSort'
+import { combSort } from './Algorithm/oddEvenSort'
 
 
 export default function NavBar(props) {
@@ -160,37 +160,48 @@ export default function NavBar(props) {
 
 
        //will add more algorithms later on
-       if (Algorithm === 'Bubble Sort'){
-        Intervals = setInterval(bubbleSort, Speed)
-       }
+       if (Algorithm === 'Insertion Sort'){
+        Intervals = setInterval(insertionsort, Speed)
+        console.log(arr);
+    }
        if (Algorithm === 'Bogo Sort'){
-        
         Intervals = setInterval(bogoSort, Speed)
-        
+       }
+       if(Algorithm === 'Selection Sort'){
+           Intervals = setInterval(selectionsort, Speed)
+       }
+       if(Algorithm === 'Comb Sort'){
+           Intervals = setInterval(combsort, Speed)
        }
        
+      
+       
        
      
      
-    function bubbleSort (){
-       
-        BubbleSort(arr)
+    function insertionsort(){
+        insertionSort(arr)
         stuff()
         Stop()
-   }
+    }
    function bogoSort (){
       BogoSort(arr)
       stuff()
       Stop()
-      
-       
-      
+    }
+    function selectionsort(){
+        selectionSort(arr)
+        stuff()
+        Stop()
+    }
+    function combsort(){
+        combSort(arr)
+        stuff()
+        Stop()
+    }
+    
+    
 
-       
-        
-       
-       
-   }
    }
    
 
@@ -222,17 +233,19 @@ export default function NavBar(props) {
                 <div className="Inputs" style={{display:display}}>
                    <ul>
                        <button onClick={randomArray}><li>Initialise array</li></button>
-                       <button><li>Algorithms:  
+                       <button><li><div style={{marginRight:'5px'}}>Algorithms:  </div>
                            <select onChange={ChooseAlgo}>
-                            <option value='Bubble Sort'>Bubble sort</option>
+                           <option value='Insertion Sort'>Insertion Sort</option>
                             <option value='Bogo Sort'>Bogo Sort</option>
+                            <option value='Selection Sort'>Selection Sort</option>
+                            <option value='Comb Sort'>Comb Sort</option>
 
                            </select></li></button>
                        <button onClick={sort}><li>Sort!</li></button>
                        <button>
                            <li>  
                                 <div>Array Length:</div><input onChange={ChangeLength} type='range' min='5' max='150'></input><br></br>
-                                <div>Sort Speed:</div><input onChange={ChangeSpeed} type='range' min='1' max='1000'></input>
+                                <div>Sort Speed:</div><input  onChange={ChangeSpeed} type='range' min='1' max='1000'></input>
                                 </li> </button>
                    </ul>
                </div>

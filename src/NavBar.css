@@ -75,6 +75,7 @@ button:hover{
     border-radius: 10px;
 }
 
+
 @media (max-width:560px){
     .Toggle{
         margin-top: 10px;

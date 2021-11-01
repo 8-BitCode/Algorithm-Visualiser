@@ -12,7 +12,7 @@ function App() {
 
   const [arr, updateArr] = useState([])
   const [sortStatus, setSortStatus] = useState()
-  const [Algorithm, setAlgorithm] = useState('Bubble Sort')
+  const [Algorithm, setAlgorithm] = useState('Insertion Sort')
   const [height, setHeight] = useState();
     
    
