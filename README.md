@@ -1,1 +1,1 @@
-"Art"
+Sorting algorithm visualiser
