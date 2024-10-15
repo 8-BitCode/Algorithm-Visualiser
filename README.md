@@ -6,4 +6,4 @@ UPDATE:
 
 this is the demo verison of repository https://github.com/8-BitCode/AlgorithmShowcase
 
-please refer to algorithshowcase for even neato version of visualiser
+please refer to algorithshowcase for even more neato version of visualiser
